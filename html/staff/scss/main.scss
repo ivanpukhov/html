@@ -1557,7 +1557,7 @@ body {
             height: 100%;
         }
         .table__scroll {
-            height: calc(100vh - 500px);
+            height: calc(100% - 500px);
         }
         .content {
             justify-content: start;
