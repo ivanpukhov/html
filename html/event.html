@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <title>React App</title>
-    <link rel="stylesheet" href="staff/style.css">
+    <link rel="stylesheet" href="staff/event.css">
+    <link rel="stylesheet" href="staff/popup.css">
+
 </head>
 
 <body class="null">
@@ -116,175 +118,164 @@
                 </nav>
             </div>
             <div class="content">
-                <div class="content__top">
-                    <li class="content__menu-item">DASHBOARD</li>
-                    <li class="content__menu-item header__mobile">TASK</li>
-                    <li class="content__menu-item header__mobile">HISTORY</li>
-                    <li class="content__menu-item active__table">LEADERBOARD</li>
+
+                <div class="event">
+                    <div class="event__content">
+                        <div class="event__title">
+                            Пригласите друзей. Зарабатывайте <span class="block"> вместе.</span> <span> Получайте до 22% </span>от комиссии платформы.
+                        </div>
+                        <div class="event__link">Условия реферальной программы</div>
+                    </div>
+                    <div class="event__img">
+                    </div>
                 </div>
-                <div class="leaderboard">
-                    <div class="leaderboard__top">
-                        <div class="leaderboard__top-item header__mobile">
-                            <div class="leaderboard__four dacc">
-                                <div class="leaderboard__photo">
-                                    <img src="staff/img/leaderboard4.png" alt="">
-                                </div>
-                                <div class="leaderboard__name">Roma#4345</div>
-                                <div class="leaderboard__words">“I dont give a shit”</div>
-                            </div>
+                <div class="help">
+                    <div class="help__item">
+                        <div class="help__img">
+                            <img src="staff/img/help__left.svg" alt="">
                         </div>
-                        <div class="leaderboard__top-item">
-                            <div class="leaderboard__two dacc">
-                                <div class="leaderboard__photo">
-                                    <img src="staff/img/leaderboard2.png" alt="">
-
-                                </div>
-                                <div class="leaderboard__name">Uoma#4457</div>
-                                <div class="leaderboard__words">“Im gonna kick <br> your ass!”</div>
-                            </div>
-                        </div>
-                        <div class="leaderboard__top-item">
-                            <div class="leaderboard__one dacc leader">
-                                <div class="leaderboard__photo ">
-                                    <img src="staff/img/140.jpg" alt="">
-                                </div>
-                                <div class="leaderboard__name">Qoma#4454</div>
-                                <div class="leaderboard__words">“Good luck guys”</div>
-                                <div class="leaderboard__leader">LEADER!</div>
-                            </div>
-                        </div>
-                        <div class="leaderboard__top-item">
-                            <div class="leaderboard__three dacc">
-                                <div class="leaderboard__photo">
-                                    <img src="staff/img/leaderboard3.png" alt="">
-
-                                </div>
-                                <div class="leaderboard__name">Roma#4345</div>
-                                <div class="leaderboard__words">“Crap..”</div>
-                            </div>
-                        </div>
-                        <div class="leaderboard__top-item header__mobile">
-                            <div class="leaderboard__five dacc">
-                                <div class="leaderboard__photo">
-                                    <img src="staff/img/leaderboard5.png" alt="">
-                                </div>
-                                <div class="leaderboard__name">Uoma#4457</div>
-                                <div class="leaderboard__words">“Damn...”</div>
-                            </div>
+                        <div class="help__text">
+                            Рефералы, привлеченные на этапе Bounty, <br> Airdrop или на любом другом, сохранятся <br> и будут учитываться после старта <br> основной платформы.
                         </div>
                     </div>
-                    <div class="leaderboard__place">
-                        <div class="place place__none">4 место</div>
-                        <div class="place">2 место</div>
-                        <div class="place">1 место</div>
-                        <div class="place">3 место</div>
-                        <div class="place place__none">5 место</div>
-                    </div>
-                    <div class="table__scroll">
-
-                        <div class="leaderboard__subtitle">
-                            <div class="subtitle line__number">№</div>
-                            <div class="subtitle line__id">Just ID</div>
-                            <div class="subtitle line__lvl">LVL</div>
-                            <div class="subtitle line__tasks">TASKS</div>
-                            <div class="subtitle line__xp">XP</div>
+                    <div class="help__item">
+                        <div class="help__img">
+                            <img src="staff/img/help__center.svg" alt="">
                         </div>
-                        <div class="leaderboard__table">
-                            <div class="table__line">
-                                <div class="line__number line__item">1</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard5.png" alt="">Roma#4345</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">2</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard3.png" alt="">Uoma#4457</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">3</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard3.png" alt="">Qoma#4454</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">4</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard5.png" alt="">Uoma#4457</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">5</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard2.png" alt="">Qoma#4454</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">6</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard5.png" alt="">Roma#4345</div>
-                                <div class="line__lvl line__item">7</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">8</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard3.png" alt="">Uoma#4457</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">9</div>
-                                <div class="line__id line__item"><img src="staff/img/table1.png" alt="">Qoma#4345</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">10</div>
-                                <div class="line__id line__item"><img src="staff/img/table1.png" alt="">Roma#4345</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">11</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard5.png" alt="">Roma#4345</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">12</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard3.png" alt="">Uoma#4457</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
-                            <div class="table__line">
-                                <div class="line__number line__item">13</div>
-                                <div class="line__id line__item"><img src="staff/img/leaderboard3.png" alt="">Qoma#4454</div>
-                                <div class="line__lvl line__item">2</div>
-                                <div class="line__tasks line__item">56</div>
-                                <div class="line__xp line__item">8960</div>
-                            </div>
+                        <div class="help__text">
+                            Реферальная программа X-Justice предусматривает 5 уровней в глубину. <br> В рамках программы мы будем <br> распределять между пользователями <br> до 22% от комисси сервиса.
+                        </div>
+                    </div>
+                    <div class="help__item">
+                        <div class="help__img">
+                            <img src="staff/img/help__right.svg" alt="">
+                        </div>
+                        <div class="help__text">
+                            Подключите кошелек к сайту (см. ниже) <br> и вам будет сгенерированна <br> ваша реферальная ссылка.
                         </div>
                     </div>
                 </div>
-                <div class="leaderboard__btn">
-                    <a href="#">
-                        Подробнее о рейтинге
-                    </a>
+                <div class="slider">
+                    <div class="slider-list">
+                        <div class="slider-track">
+                            <div class="slide">
+                                <div class="help__item">
+                                    <div class="help__img">
+                                        <img src="staff/img/slider1.svg" alt="">
+                                    </div>
+                                    <div class="help__text">
+                                        Рефералы, привлеченные на этапе Bounty, <br> Airdrop или на любом другом, сохранятся <br> и будут учитываться после старта <br> основной платформы.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="help__item">
+                                    <div class="help__img">
+                                        <img src="staff/img/slider1.svg" alt="">
+                                    </div>
+                                    <div class="help__text">
+                                        Реферальная программа X-Justice предусматривает 5 уровней в глубину. <br> В рамках программы мы будем <br> распределять между пользователями <br> до 22% от комисси сервиса.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="help__item">
+                                    <div class="help__img">
+                                        <img src="staff/img/help__right.svg" alt="">
+                                    </div>
+                                    <div class="help__text">
+                                        Подключите кошелек к сайту (см. ниже) <br> и вам будет сгенерированна <br> ваша реферальная ссылка.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrows">
+                        <button type="button" class="one slider__btn"></button>
+                        <button type="button" class="two slider__btn"></button>
+                        <button type="button" class="three slider__btn"></button>
+
+                    </div>
                 </div>
+                <div class="brotitle">It will be cool, Bro</div>
+
+                <div class="lvl">
+                    <div class="lvl__row">
+                        <div class="lvl__top">
+                            <div class="lvl__number">Level 01</div>
+                            <div class="lvl__procent">10%</div>
+                        </div>
+                        <div class="lvl__pp">
+
+                            <div class="lvl__center">6 рефералов</div>
+                            <div class="lvl__bottom">Список</div>
+                        </div>
+                    </div>
+                    <div class="lvl__line">
+                        <img src="staff/img/lvl__line.png" alt="" class="lvl__line-one"> <img src="staff/img/line-two.svg" alt="" class="lvl__line-two">
+
+                    </div>
+                    <div class="lvl__row">
+                        <div class="lvl__top">
+                            <div class="lvl__number">Level 02</div>
+                            <div class="lvl__procent">5%</div>
+                        </div>
+                        <div class="lvl__pp">
+
+                            <div class="lvl__center">56 рефералов</div>
+                            <div class="lvl__bottom">Список</div>
+                        </div>
+                    </div>
+                    <div class="lvl__line">
+                        <img src="staff/img/lvl__line.png" alt="" class="lvl__line-one"> <img src="staff/img/line-two.svg" alt="" class="lvl__line-two">
+
+                    </div>
+                    <div class="lvl__row">
+                        <div class="lvl__top">
+                            <div class="lvl__number">Level 03</div>
+                            <div class="lvl__procent">3%</div>
+                        </div>
+                        <div class="lvl__pp">
+                            <div class="lvl__center">55 рефералов</div>
+                            <div class="lvl__bottom">Список</div>
+                        </div>
+                    </div>
+                    <div class="lvl__line">
+                        <img src="staff/img/lvl__line.png" alt="" class="lvl__line-one"> <img src="staff/img/line-two.svg" alt="" class="lvl__line-two">
+
+                    </div>
+                    <div class="lvl__row">
+                        <div class="lvl__top">
+                            <div class="lvl__number">Level 04</div>
+                            <div class="lvl__procent">2%</div>
+                        </div>
+                        <div class="lvl__pp">
+
+                            <div class="lvl__center">10 рефералов</div>
+                            <div class="lvl__bottom">Список</div>
+                        </div>
+                    </div>
+                    <div class="lvl__line">
+                        <img src="staff/img/lvl__line.png" alt="" class="lvl__line-one"> <img src="staff/img/line-two.svg" alt="" class="lvl__line-two">
+
+                    </div>
+                    <div class="lvl__row">
+                        <div class="lvl__top">
+                            <div class="lvl__number">Level 05</div>
+                            <div class="lvl__procent">1%</div>
+                        </div>
+                        <div class="lvl__pp">
+                            <div class="lvl__center">6 рефералов</div>
+                            <div class="lvl__bottom">Список</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
-    </div>
+
+
 </body>
 
 </html>

@@ -1,0 +1,611 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <title>React App</title>
+    <link rel="stylesheet" href="/staff/main.css">
+    <link rel="stylesheet" href="/staff/popup.css">
+</head>
+
+<body class="null">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="container">
+            <header class="header">
+                <div class="hamburger-menu sc-gsnTZi bnYZCt">
+                    <div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div>
+                </div>
+                <div class="mobile__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 42 46" fill="none"><path d="M42 46L25.9412 21.5527L33.9307 9.02207H22.3974L4.33002 37.1016H15.8633L20.2325 30.4179L30.4668 46H42Z" fill="white"></path><path d="M17.2802 8.77979L11.5332 0H0L11.6513 17.7573L17.2802 8.77979Z" fill="white"></path></svg>
+                </div>
+                <div class="search">
+                    <div class="search__block"><input type="text" placeholder="Поиск..." class="jLPmwH">
+                        <span class="hooPck"></span>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="lang">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--light-blue)">
+                            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z">
+                            </path>
+                        </svg>
+                        <span>
+                            Ru
+                        </span>
+                    </div>
+                    <div class="wallet">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="1" y="1" width="14" height="14" rx="3" stroke="#345B82" stroke-width="2"></rect><path d="M9 16V20C9 21.6569 10.3431 23 12 23H20C21.6569 23 23 21.6569 23 20V12C23 10.3431 21.6569 9 20 9H16" stroke="#345B82" stroke-width="2"></path>
+                        </svg>
+                        <span>
+                            2389...282
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="64" fill="none">
+                            <g filter="url(#a)" fill="#FE3355">
+                                <path d="M24 10a4 4 0 0 0-4 4v16a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4v-2.667h-8a4 4 0 0 1-4-4v-2.666a4 4 0 0 1 4-4h8V14a4 4 0 0 0-4-4H24z"></path>
+                                <path d="M42.667 22A2.667 2.667 0 1 1 48 22a2.667 2.667 0 0 1-5.333 0z"></path>
+                            </g>
+                            <defs>
+                                <filter id="a" x="0" y="0" width="54" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                    <feOffset dy="10"></feOffset>
+                                    <feGaussianBlur stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix values="0 0 0 0 0.996078 0 0 0 0 0.199216 0 0 0 0 0.332026 0 0 0 0.2 0"></feColorMatrix>
+                                    <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5922_584"></feBlend>
+                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_5922_584" result="shape"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </header>
+            <div class="navigation">
+                <div class="navigation__logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 42 46" fill="none"><path d="M42 46L25.9412 21.5527L33.9307 9.02207H22.3974L4.33002 37.1016H15.8633L20.2325 30.4179L30.4668 46H42Z" fill="white"></path><path d="M17.2802 8.77979L11.5332 0H0L11.6513 17.7573L17.2802 8.77979Z" fill="white"></path></svg>
+                    <div class="sc-crXcEl lmntAJ"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="#345B82"><rect x="2.82843" width="32" height="4" rx="2" transform="rotate(45 2.82843 0)"></rect><rect width="32" height="4" rx="2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 22.6275 0)"></rect></svg></div>
+                </div>
+                <nav class="nav">
+                    <div class="sc-kDDrLX hWcrhH">
+                        <div class="sc-iBkjds fUTyrF"><input type="text" placeholder="Поиск..." class="sc-ftvSup jLPmwH"><span class="sc-papXJ hooPck"></span></div>
+                    </div>
+                    <div class="nav__top">
+                        <div class="nav__item">
+                            <a aria-current="page" class="nav__item-link " href="/">
+                                <div class="dark nav__item-img"><svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.2426 23.2721C37.8995 20.9289 34.1005 20.9289 31.7574 23.2721L23.2721 31.7573C20.9289 34.1005 20.9289 37.8995 23.2721 40.2426L31.7574 48.7279C34.1005 51.0711 37.8995 51.0711 40.2426 48.7279L48.7279 40.2426C51.0711 37.8995 51.0711 34.1005 48.7279 31.7573L40.2426 23.2721ZM36 38C37.1046 38 38 37.1046 38 36C38 34.8954 37.1046 34 36 34C34.8954 34 34 34.8954 34 36C34 37.1046 34.8954 38 36 38Z" fill="#5B6E82"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 2.68629 2.68629 0 6 0H18C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6ZM10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6C9.10457 6 10 6.89543 10 8ZM8 18C9.10457 18 10 17.1046 10 16C10 14.8954 9.10457 14 8 14C6.89543 14 6 14.8954 6 16C6 17.1046 6.89543 18 8 18ZM18 8C18 9.10457 17.1046 10 16 10C14.8954 10 14 9.10457 14 8C14 6.89543 14.8954 6 16 6C17.1046 6 18 6.89543 18 8ZM16 18C17.1046 18 18 17.1046 18 16C18 14.8954 17.1046 14 16 14C14.8954 14 14 14.8954 14 16C14 17.1046 14.8954 18 16 18Z" fill="#5B6E82"></path></svg></div><span>Пари</span></a>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-img"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M30.3602 4.82C30.3602 2.16 32.5202 0 35.1802 0C37.8402 0 40.0002 2.16 40.0002 4.82C40.0002 7.48 37.8402 9.64 35.1802 9.64C32.5202 9.64 30.3602 7.48 30.3602 4.82ZM22.66 25.5185L28.44 18.0605L28.36 18.1005C28.68 17.6605 28.74 17.1005 28.52 16.6005C28.302 16.1005 27.82 15.7605 27.302 15.7205C26.76 15.6605 26.222 15.9005 25.9 16.3405L21.062 22.6005L15.52 18.2405C15.18 17.9805 14.78 17.8785 14.38 17.9205C13.982 17.9805 13.622 18.1985 13.38 18.5185L7.46202 26.2205L7.34002 26.4005C7.00002 27.0385 7.16002 27.8585 7.76002 28.3005C8.04002 28.4805 8.34002 28.6005 8.68002 28.6005C9.14202 28.6205 9.58002 28.3785 9.86002 28.0005L14.88 21.5385L20.58 25.8205L20.76 25.9385C21.4 26.2785 22.2 26.1205 22.66 25.5185ZM26.9 3.56055C26.82 4.06055 26.78 4.56055 26.78 5.06055C26.78 9.56055 30.42 13.1985 34.9 13.1985C35.4 13.1985 35.88 13.1405 36.38 13.0605V29.1985C36.38 35.9805 32.38 40.0005 25.58 40.0005H10.802C4 40.0005 0 35.9805 0 29.1985V14.4005C0 7.60055 4 3.56055 10.802 3.56055H26.9Z" fill="#5B6E82"></path></svg></div><span>Опцион</span></a>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__item-link active" href="#">
+                                <div class="nav__item-img"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37" fill="none"><path d="M20 2C29.9411 2 38 10.0589 38 20C38 29.9411 30.8 34.4013 30.8 34.4013L32 36.0015C36.8578 32.3526 40 26.5433 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 26.5433 3.14221 32.3526 8 36.0015L9.2 34.4013C4.82799 31.1174 2 25.8889 2 20C2 10.0589 10.0589 2 20 2Z" fill="#5B6E82"></path><path d="M20 6C27.732 6 34 12.268 34 20C34 24.5803 31.8004 28.6468 28.4 31.201L29.6 32.8012C33.4862 29.8821 36 25.2346 36 20C36 11.1634 28.8366 4 20 4C11.1634 4 4 11.1634 4 20C4 25.2346 6.51377 29.8821 10.4 32.8012L11.6 31.201C8.19955 28.6468 6 24.5803 6 20C6 12.268 12.268 6 20 6Z" fill="#5B6E82"></path><path d="M20 10C25.5228 10 30 14.4772 30 20C30 23.2716 28.4289 26.1763 26 28.0007L27.2 29.6009C30.1147 27.4116 32 23.926 32 20C32 13.3726 26.6274 8 20 8C13.3726 8 8 13.3726 8 20C8 23.926 9.88533 27.4116 12.8 29.6009L14 28.0007C11.5711 26.1763 10 23.2716 10 20C10 14.4772 14.4772 10 20 10Z" fill="#5B6E82"></path><path d="M20 14C23.3137 14 26 16.6863 26 20C26 21.963 25.0573 23.7058 23.6 24.8004L24.8 26.4006C26.7431 24.9411 28 22.6173 28 20C28 15.5817 24.4183 12 20 12C15.5817 12 12 15.5817 12 20C12 22.6173 13.2569 24.9411 15.2 26.4006L16.4 24.8004C14.9427 23.7058 14 21.963 14 20C14 16.6863 16.6863 14 20 14Z" fill="#5B6E82"></path><path d="M20 16C17.7909 16 16 17.7909 16 20C16 21.3087 16.6284 22.4705 17.6 23.2003L20 20L22.4 23.2003C23.3716 22.4705 24 21.3087 24 20C24 17.7909 22.2091 16 20 16Z" fill="#5B6E82"></path></svg></div><span>Крэш</span></a>
+                        </div>
+                        <div class="nav__item">
+                            <a islargelabel="true" class="link__small" href="#">
+                                <div class="nav__item-img"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.8218 1.53723L26.8237 3.03648C32.333 3.46827 35.9723 7.22239 35.9782 12.9795L36 29.8311C36.0079 36.1079 32.0645 39.97 25.7436 39.98L10.3038 40C4.02239 40.008 0.0296331 36.0539 0.0217345 29.7591L1.32995e-05 13.1054C-0.00788532 7.31034 3.50305 3.56622 9.01234 3.06047L9.01037 1.56122C9.00839 0.681663 9.66003 0.0199945 10.5289 0.0199945C11.3977 0.0179955 12.0494 0.677665 12.0513 1.55722L12.0533 2.95652L23.7828 2.94053L23.7808 1.54123C23.7788 0.661673 24.4305 0.00200353 25.2993 4.53098e-06C26.1484 -0.00199447 26.8198 0.657675 26.8218 1.53723ZM3.04293 13.7232L32.9392 13.6832V12.9836C32.8543 8.68571 30.698 6.43083 26.8277 6.095L26.8296 7.63423C26.8296 8.4938 26.1602 9.17546 25.3111 9.17546C24.4423 9.17746 23.7887 8.4978 23.7887 7.63823L23.7867 6.01904L12.0572 6.03503L12.0592 7.65222C12.0592 8.51379 11.4096 9.19345 10.5407 9.19345C9.67185 9.19545 9.01824 8.51779 9.01824 7.65622L9.01627 6.11699C5.16569 6.5028 3.03504 8.76567 3.04096 13.1015L3.04293 13.7232ZM24.4798 22.8086V22.8305C24.4995 23.7501 25.2499 24.4477 26.1602 24.4277C27.0488 24.4058 27.7577 23.6441 27.738 22.7246C27.6965 21.845 26.9837 21.1274 26.097 21.1294C25.1887 21.1494 24.4778 21.889 24.4798 22.8086ZM26.1109 31.7841C25.2025 31.7641 24.47 31.0065 24.468 30.0869C24.4482 29.1674 25.1769 28.4058 26.0852 28.3838H26.105C27.0331 28.3838 27.7854 29.1414 27.7854 30.0809C27.7874 31.0205 27.037 31.7821 26.1109 31.7841ZM16.3442 22.8408C16.3837 23.7603 17.1361 24.4779 18.0444 24.438C18.933 24.396 19.6419 23.6364 19.6024 22.7168C19.5807 21.8173 18.8501 21.1176 17.9615 21.1196C17.0531 21.1596 16.3423 21.9212 16.3442 22.8408ZM18.0523 31.6943C17.1439 31.7343 16.3936 31.0167 16.3521 30.0971C16.3521 29.1776 17.061 28.418 17.9693 28.376C18.8579 28.374 19.5905 29.0736 19.6103 29.9712C19.6518 30.8927 18.9409 31.6523 18.0523 31.6943ZM8.20862 22.9106C8.24811 23.8301 9.00045 24.5498 9.90879 24.5078C10.7974 24.4678 11.5063 23.7062 11.4648 22.7867C11.4451 21.8871 10.7145 21.1875 9.82388 21.1895C8.91554 21.2294 8.20664 21.9911 8.20862 22.9106ZM9.91673 31.7041C9.00839 31.7461 8.25802 31.0264 8.21655 30.1069C8.21458 29.1873 8.92545 28.4257 9.83379 28.3857C10.7224 28.3837 11.455 29.0834 11.4747 29.9829C11.5162 30.9025 10.8073 31.6641 9.91673 31.7041Z" fill="#5B6E82"></path></svg></div><span>Событие</span></a>
+                        </div>
+                    </div>
+                    <div class="nav__line"></div>
+                    <div class="nav__bottom">
+                        <div class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-img"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.67 0H14.34C17.73 0 20 2.379 20 5.919V14.089C20 17.62 17.73 20 14.34 20H5.67C2.28 20 0 17.62 0 14.089V5.919C0 2.379 2.28 0 5.67 0ZM13.58 13.81C13.83 13.81 14.08 13.68 14.22 13.44C14.44 13.089 14.32 12.629 13.96 12.41L10.4 10.29V5.669C10.4 5.26 10.07 4.919 9.65 4.919C9.24 4.919 8.9 5.26 8.9 5.669V10.72C8.9 10.98 9.04 11.23 9.27 11.36L13.19 13.7C13.31 13.78 13.45 13.81 13.58 13.81Z" fill="#5B6E82"></path></svg></div><span>TXN</span></a>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__item-link" href="/bounty/campaigns/66">
+                                <div class="nav__item-img"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 22 22" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM7.63579 6.34442C7.99786 6.14325 8.45447 6.27368 8.65564 6.6358L11 10.8557L13.3444 6.6358C13.5456 6.27368 14.0022 6.14325 14.3642 6.34442C14.7263 6.54553 14.8568 7.00214 14.6556 7.36426L11.858 12.4L13 14.4557L17.3444 6.6358C17.5456 6.27368 18.0022 6.14325 18.3642 6.34442C18.7263 6.54553 18.8568 7.00214 18.6556 7.36426L13.6556 16.3643C13.5234 16.6024 13.2724 16.75 13 16.75C12.7276 16.75 12.4767 16.6024 12.3444 16.3643L11 13.9444L9.65564 16.3643C9.52336 16.6024 9.27238 16.75 9.00002 16.75C8.72765 16.75 8.47667 16.6024 8.34439 16.3643L3.34439 7.36426C3.14323 7.00214 3.2737 6.54553 3.63579 6.34442C3.99786 6.14325 4.45447 6.27368 4.65564 6.6358L9.00002 14.4557L10.142 12.4L7.34439 7.36426C7.14323 7.00214 7.2737 6.54553 7.63579 6.34442Z" fill="white"></path></svg></div><span>Wiki</span></a>
+                        </div>
+                        <div class="nav__item">
+                            <a islargelabel="true" class="link__small" href="/bounty/campaigns">
+                                <div class="nav__item-img"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.4023 11.58C18.76 11.77 19.036 12.07 19.2301 12.37C19.6083 12.99 19.5776 13.75 19.2097 14.42L18.4943 15.62C18.1162 16.26 17.411 16.66 16.6855 16.66C16.3278 16.66 15.9292 16.56 15.6022 16.36C15.3365 16.19 15.0299 16.13 14.7029 16.13C13.6911 16.13 12.8429 16.96 12.8122 17.95C12.8122 19.1 11.872 20 10.6968 20H9.30692C8.12145 20 7.18125 19.1 7.18125 17.95C7.16081 16.96 6.31259 16.13 5.30085 16.13C4.96361 16.13 4.65702 16.19 4.40153 16.36C4.0745 16.56 3.66572 16.66 3.31825 16.66C2.58245 16.66 1.87729 16.26 1.49917 15.62L0.79402 14.42C0.415896 13.77 0.395456 12.99 0.773581 12.37C0.937094 12.07 1.24368 11.77 1.59115 11.58C1.87729 11.44 2.06125 11.21 2.23498 10.94C2.74596 10.08 2.43937 8.95 1.57071 8.44C0.55897 7.87 0.231943 6.6 0.814459 5.61L1.49917 4.43C2.09191 3.44 3.35913 3.09 4.38109 3.67C5.27019 4.15 6.425 3.83 6.9462 2.98C7.10972 2.7 7.20169 2.4 7.18125 2.1C7.16081 1.71 7.27323 1.34 7.4674 1.04C7.84553 0.42 8.53024 0.02 9.27627 0H10.7172C11.4735 0 12.1582 0.42 12.5363 1.04C12.7203 1.34 12.8429 1.71 12.8122 2.1C12.7918 2.4 12.8838 2.7 13.0473 2.98C13.5685 3.83 14.7233 4.15 15.6226 3.67C16.6344 3.09 17.9118 3.44 18.4943 4.43L19.179 5.61C19.7718 6.6 19.4447 7.87 18.4228 8.44C17.5541 8.95 17.2475 10.08 17.7687 10.94C17.9322 11.21 18.1162 11.44 18.4023 11.58ZM10.0001 12.9999C11.6569 12.9999 13.0001 11.6567 13.0001 9.99988C13.0001 8.34302 11.6569 6.99988 10.0001 6.99988C8.34324 6.99988 7.00009 8.34302 7.00009 9.99988C7.00009 11.6567 8.34324 12.9999 10.0001 12.9999Z" fill="white"></path></svg></div><span>Настройки</span></a>
+                        </div>
+                        <div class="settings">
+                            <a aria-current="page" class="nav__item-link active" href="/">
+                                <div class="light nav__item-img"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11" cy="11" r="9" stroke="white" stroke-width="4" stroke-dasharray="10 4"/>
+                                    </svg>
+                                </div><span>Помощь</span></a>
+                        </div>
+                    </div>
+                    <div value="false" class="admin__checkbox">
+                        <div value="false" class="admin__checkbox-item">
+                            <div></div>
+                        </div><span>admin</span></div>
+                </nav>
+            </div>
+            <div class="content">
+
+                <div class="content__top members__top">
+                    <li class="content__menu-item">TASK</li>
+                    <li class="content__menu-item header__mobile">REVIEWS</li>
+                    <li class="content__menu-item header__mobile">DASHBOARD</li>
+                    <li class="content__menu-item header__mobile">HISTORY</li>
+                    <li class="content__menu-item header__mobile">LEADERBOARD</li>
+                    <li class="content__menu-item active__table">MEMBERS</li>
+                </div>
+                <div class="members__search">
+                    <input type="text" placeholder="Введите название кампании">
+                    <button></button>
+                </div>
+                <div class="leaderboard members__wrapper">
+
+                    <div class="str__subtitle  members__sbt">
+                        <div class="subtitle check__just">JUST ID</div>
+                        <div class="subtitle check__wallet">Wallet</div>
+                        <div class="subtitle check__company">Company</div>
+                        <div class="subtitle check__date">Access level</div>
+                        <div class="subtitle check__info"></div>
+                    </div>
+                    <div class="leaderboard__table members__table">
+
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Roma#4345</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">Admin</div>
+                                <div class="check__line-item check__edit popap check__admin"></div>
+                            </div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+                        <div class="check__line">
+                            <div class="check__mobile">
+                                <div class="check__mobile-item">JUST ID</div>
+                                <div class="check__mobile-item">Wallet</div>
+                                <div class="check__mobile-item">Company</div>
+                                <div class="check__mobile-item">Access level</div>
+                            </div>
+                            <div class="check__pc">
+                                <div class="check__line-item check__just"><img src="/staff/img/img__history/just.png" alt="">Uoma#4457</div>
+                                <div class="check__line-item check__wallet">XVbv....e79d</div>
+                                <div class="check__line-item check__company">X-Justice</div>
+                                <div class="check__line-item check__access ">X-Moderator</div>
+                                <div class="check__line-item check__edit popap " data-toggle="modal" data-target="#modal-coming-soon"></div>
+                            </div>
+                            <div class="check__edit popap edit__right" data-toggle="modal" data-target="#modal-coming-soon"></div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="check__btn">
+                        <div class="check__btn-container" data-toggle="modal" data-target="#modal-join-whitelist" class="check__line-item check__diss popap">
+                            Create invite
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-coming-soon" tabindex="-1" aria-labelledby="ModalNetworkModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-gambling">
+                <div class="modal-content">
+
+                    <div class="popup " id="popup">
+                        <div class="popup__container">
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+
+                            <div class="popup__title">Права доступа</div>
+                            <div class="popup__text pl">Редактировать права доступа для: Roma#9383</div>
+
+                            <form action="">
+                                <div class="popup__role">X-Moderator</div>
+                                <div class="select">
+                                    <select class="popup__role">
+									<option value="Guest" selected disabled>Выберите роль</option>
+									<option value="Guest">X-Moderator</option>
+									<option value="Guest">Guest</option>
+									<option value="Guest">Owner</option>
+								</select></div>
+                                <button class="popup__btn" id="popup__btn" disabled>Сохранить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-join-whitelist" tabindex="-1" aria-labelledby="Gambling1ModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-gambling" style="width:700px;">
+                <div class="modal-content">
+
+                    <div class="popup " id="popup">
+
+                        <div class="popup__container" id="popupCont">
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+
+                            <div class="popup__title">Create invite</div>
+                            <div class="popup__text">Создайте права доступа для пользователя</div>
+
+                            <form action="">
+                                <div class="select">
+                                    <select class="popup__role">
+									<option value="Guest" selected disabled>Выберите роль</option>
+									<option value="Guest">X-Moderator</option>
+									<option value="Guest">Guest</option>
+									<option value="Guest">Owner</option>
+								</select></div>
+                                <div class="popup__role popup__role-input">
+                                    <input type="text" placeholder="Введите Just ID или кошелек">
+                                </div>
+                                <button class="popup__btn" id="popup__btn-second" disabled>Сохранить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
