@@ -1560,7 +1560,7 @@ body {
     height: 100%;
   }
   .table__scroll {
-    height: calc(100vh - 400px);
+    height: calc(100% - 500px);
   }
   .content {
     -webkit-box-pack: start;
